@@ -6,7 +6,7 @@
         <ng-container *ngIf="cameras.length > 0">
             <div #col class=" row" *ngFor="let cam of cameras; let i = index" [id] = "cam.cameraId">
 
-                <div class="col-sm-4 col-sm-offset-">
+                <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
                     <div class="card-body">
                         <!-- <img [src]="cam.url"> -->
                         <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -14,7 +14,7 @@
 
                 </div>
 
-                <div class="col-sm-4 col-sm-offset-">
+                <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
                   <div class="card-body">
                       <!-- <img [src]="cam.url"> -->
                       <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -22,7 +22,7 @@
 
               </div>
 
-              <div class="col-sm-4 col-sm-offset">
+              <div class="col-sm-4 col-sm-offset-ol-sm-6 col-md-4 col-lg-4">
                 <div class="card-body">
                     <!-- <img [src]="cam.url"> -->
                     <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -30,7 +30,7 @@
 
             </div>
 
-            <div class="col-sm-4 col-sm-offset">
+            <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
               <div class="card-body">
                   <!-- <img [src]="cam.url"> -->
                   <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -38,7 +38,7 @@
 
           </div>
 
-          <div class="col-sm-4 col-sm-offset-">
+          <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
             <div class="card-body">
                 <!-- <img [src]="cam.url"> -->
                 <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -46,7 +46,7 @@
 
         </div>
 
-        <div class="col-sm-4 col-sm-offset-">
+        <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
           <div class="card-body">
               <!-- <img [src]="cam.url"> -->
               <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -54,7 +54,7 @@
 
       </div>
 
-      <div class="col-sm-4 col-sm-offset">
+      <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
         <div class="card-body">
             <!-- <img [src]="cam.url"> -->
             <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -62,7 +62,7 @@
 
     </div>
 
-    <div class="col-sm-4 col-sm-offset">
+    <div class="col-sm-4 col-sm-offset-sm-6 col-md-4 col-lg-4">
       <div class="card-body">
           <!-- <img [src]="cam.url"> -->
           <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
@@ -70,7 +70,7 @@
 
   </div>
 
-  <div class="col-sm-4 col-sm-offset">
+  <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
     <div class="card-body">
         <!-- <img [src]="cam.url"> -->
         <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
