@@ -95,6 +95,27 @@ this.cameras.map(c => {
 })
 
 }
+
+cameraFocused: any
+oldFocused: HTMLElement
+
+
+  changeSize(elem: HTMLElement, camera: any) {
+    this.cameraFocused = camera
+    // console.log('clicou')
+
+  }
+
+  dismissCamera() {
+    this.cameraFocused = null
+  }
+  
+
+  sanitize(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url)
+  }
+}
+
   // getReconhecimentoFacial() {
   //   this.cameras.forEach(async (c: Camera) => {
 
@@ -243,13 +264,7 @@ this.cameras.map(c => {
   //   console.log('destroyed')
   // }
 
-  // cameraFocused: any
-  // oldFocused: HTMLElement
-
-  // changeSize(elem: HTMLElement, camera: any) {
-  //   this.cameraFocused = camera
-
-  // }
+  
 
   // renderImage() {
   //   // console.log('entrou no render', this.socket$)
@@ -296,4 +311,4 @@ this.cameras.map(c => {
   // sanitize(url: string) {
   //   return this.sanitizer.bypassSecurityTrustResourceUrl(url)
   // }
-}
+

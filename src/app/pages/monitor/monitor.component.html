@@ -1,15 +1,66 @@
 <div class=" content">
     <div class=" row">
-        <!-- <ng-template> -->
+        <div *ngIf="cameraFocused" class="card" style="padding: 37px;">
+            <div class=" row" style="margin-bottom: 34px;">
+                <div class="col-lg-6">
+                    <div class="card card-alert-danger">
+                        <video #video class="img" *ngIf="cam === 'video'" [src]="cam" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                        <div class="card-body">
+                            <button type="button" aria-hidden="true" class="close" aria-label="Close" (click)="dismissCamera()">
+                                <i class="tim-icons icon-simple-remove white"></i>         
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 info-details">
+                    <div class=" card">
+                        <div class=" card-header">
+                            <h4 class=" card-title">Nome da Camera</h4>
+                        </div>
+                        <div class=" card-body">
+                            
+                            <div class=" table-responsive ">
+                                <table class=" table tablesorter table-hover">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Qtd Pessoas</strong></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Atual:</td>
+                                            <td>3</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>24h:</td>
+                                            <td>389</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Nivel Alerta:</strong></td>
+                                            <td class="text-success">Emergência</td>
+                                            <td></td>
+                                        </tr>
 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- </ng-template> -->
         <ng-container *ngIf="cameras.length > 0">
-            <div #col class=" row" *ngFor="let cam of cameras; let i = index" [id] = "cam.cameraId">
+            <div #col class=" row" *ngFor="let cam of cameras; let i = index" [id] = "cam.cameraId" (click)="changeSize(col, cam)">
 
                 <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
                     <div class="card-body">
                         <!-- <img [src]="cam.url"> -->
-                        <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                        <video #video class="img" *ngIf="cam.url === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
                     </div>
 
                 </div>
