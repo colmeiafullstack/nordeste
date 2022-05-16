@@ -4,7 +4,8 @@
             <div class=" row" style="margin-bottom: 34px;">
                 <div class="col-lg-6">
                     <div class="card card-alert-danger">
-                        <video #video class="img" *ngIf="cam === 'video'" [src]="cam" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                        <video #video class="cam" *ngIf="cameraFocused.tipo === 'video'" [src]="cameraFocused.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+
                         <div class="card-body">
                             <button type="button" aria-hidden="true" class="close" aria-label="Close" (click)="dismissCamera()">
                                 <i class="tim-icons icon-simple-remove white"></i>         
@@ -59,72 +60,72 @@
 
                 <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
                     <div class="card-body">
-                        <!-- <img [src]="cam.url"> -->
-                        <video #video class="img" *ngIf="cam.url === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                        <img [src]="cam.url">
+                        <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
                     </div>
 
                 </div>
 
                 <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
                   <div class="card-body">
-                      <!-- <img [src]="cam.url"> -->
-                      <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                      <img [src]="cam.url">
+                      <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
                   </div>
 
               </div>
 
               <div class="col-sm-4 col-sm-offset-ol-sm-6 col-md-4 col-lg-4">
                 <div class="card-body">
-                    <!-- <img [src]="cam.url"> -->
-                    <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                    <img [src]="cam.url">
+                    <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
                 </div>
 
             </div>
 
             <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
               <div class="card-body">
-                  <!-- <img [src]="cam.url"> -->
-                  <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                  <img [src]="cam.url">
+                  <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
               </div>
 
           </div>
 
           <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
             <div class="card-body">
-                <!-- <img [src]="cam.url"> -->
-                <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+                <img [src]="cam.url">
+                <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
             </div>
 
         </div>
 
         <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
           <div class="card-body">
-              <!-- <img [src]="cam.url"> -->
-              <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+              <img [src]="cam.url">
+              <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
           </div>
 
       </div>
 
       <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
         <div class="card-body">
-            <!-- <img [src]="cam.url"> -->
-            <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+            <img [src]="cam.url">
+            <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
         </div>
 
     </div>
 
     <div class="col-sm-4 col-sm-offset-sm-6 col-md-4 col-lg-4">
       <div class="card-body">
-          <!-- <img [src]="cam.url"> -->
-          <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+          <img [src]="cam.url">
+          <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
       </div>
 
   </div>
 
   <div class="col-sm-4 col-sm-offset-col-sm-6 col-md-4 col-lg-4">
     <div class="card-body">
-        <!-- <img [src]="cam.url"> -->
-        <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video>
+        <img [src]="cam.url">
+        <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
     </div>
 
 </div>

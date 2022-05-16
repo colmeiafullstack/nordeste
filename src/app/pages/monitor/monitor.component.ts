@@ -97,12 +97,13 @@ this.cameras.map(c => {
 }
 
 cameraFocused: any
+
 oldFocused: HTMLElement
 
 
   changeSize(elem: HTMLElement, camera: any) {
     this.cameraFocused = camera
-    // console.log('clicou')
+    console.log('teste', this.cameraFocused)
 
   }
 
